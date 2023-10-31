@@ -1,0 +1,10 @@
+^C:\USERS\РОМАН\DESKTOP\GIT_C++\LAB1\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Роман/Desktop/git_c++/Lab1 -BC:/Users/Роман/Desktop/git_c++/Lab1/build --check-stamp-file C:/Users/Роман/Desktop/git_c++/Lab1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
